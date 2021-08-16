@@ -5,7 +5,10 @@ export const Card: React.FC<PeopleInterface> = ({ people }) => {
   return (
     <>
       {people.map((person) => (
-        <p>{person.name}</p>
+        <div className="">
+          <p>{person.name}</p>
+          <p>{person.age}</p>
+        </div>
       ))}
     </>
   );
